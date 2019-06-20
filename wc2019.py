@@ -17,11 +17,7 @@ class Match:
     def result(self):
         win_probability = 0.5 + (self.team_b.rank - self.team_a.rank)*0.05
         x = rnd()
-#        print "Getting Result"
-#        print self.team_a.name + " " + str(self.team_a.rank)
-#        print self.team_b.name + " " + str(self.team_b.rank)
-#        print win_probability
-#        print x
+
         if x <= win_probability:
             return self.team_a.name
         else:
